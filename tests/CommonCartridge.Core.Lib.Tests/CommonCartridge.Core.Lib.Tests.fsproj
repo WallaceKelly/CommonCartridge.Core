@@ -8,16 +8,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\imscc-files\empty\imsmanifest.xml" Link="imsmanifest.xml">
+    <None Include="..\..\imscc-files\empty.imscc" Link="imscc-files/empty.imscc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Compile Include="ManifestTests.fs" />
+    <None Include="..\..\imscc-files\modules.imscc" Link="imscc-files/modules.imscc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\imscc-files\empty\imsmanifest.xml" Link="imscc-files/empty/imsmanifest.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\imscc-files\modules\imsmanifest.xml" Link="imscc-files/modules/imsmanifest.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Compile Include="TestHelpers.fs" />
+    <Compile Include="ImsccFilePaths.fs" />
+    <Compile Include="ImsccFilesTests.fs" />
+    <Compile Include="ManifestsTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
-    <PackageReference Include="XmlDiffLib" Version="1.0.1.3" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <PackageReference Include="coverlet.collector" Version="1.2.0" />

@@ -5,12 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Manifest.fs" />
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="ImsccFiles.fs" />
+    <Compile Include="ImsccManifests.fs" />
+    <Compile Include="ImsccModules.fs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FSharp.Data" Version="3.3.3" />
-    <PackageReference Include="System.Xml.Linq" Version="3.5.21022.801" />
   </ItemGroup>
 
 </Project>
