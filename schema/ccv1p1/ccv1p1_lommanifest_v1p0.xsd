@@ -23,17 +23,15 @@
                             d) In the Educational complexType only the 'learningResourceType' element and 
                             'intendedEndUserRole' are permitted;
                             e) In the General complexType the 'structure' and 'aggregationLevel' elements are prohibited;
-                            f) Only the 'contribute' element in the 'LifeCycle' complexType are permitted.
-                            
-                            A visual check was made of the integrity of this XSD on 2018-09-24. No changes were made.
+                            f) Only the 'contribute' element in the 'LifeCycle' complexType are permitted;
 
             History:        Version 1.1: The first usage of this XSD for the CC Manifest Profile.
 
             License:        IPR, License and Distribution Notices
 
-                            This machine readable file is derived from IMS Global Learning Consortium (GLC) specification IMS [spec name] Version [x.x]
-                            found at http://www.imsglobal.org/[xxx] and the original IMS GLC schema binding or code base
-                            http://www.imsglobal.org/[binding document].
+                            This machine readable file is derived from IMS Global Learning Consortium (GLC) specification IMS Common Cartridge Version 1.1
+                            found at http://www.imsglobal.org/cc and the original IMS GLC schema binding or code base
+                            http://www.imsglobal.org/cc.
 
                             Recipients of this document are requested to submit, with their comments, notification of any
                             relevant patent claims or other intellectual property rights of which they may be aware that might be

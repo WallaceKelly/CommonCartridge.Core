@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modules xmlns="http://canvas.instructure.com/xsd/cccv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://canvas.instructure.com/xsd/cccv1p0 https://canvas.instructure.com/xsd/cccv1p0.xsd">
+  <module identifier="gc26666ea71929f1c0a608746aadf8535">
+    <title>Module 1</title>
+    <workflow_state>unpublished</workflow_state>
+    <position>1</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+      <item identifier="gd6787f45be38fea3a07d25754de3a4cb">
+        <content_type>Assignment</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>Assignment 1</title>
+        <identifierref>g57eb954df8e8581e15a4f6135181042e</identifierref>
+        <position>1</position>
+        <new_tab>false</new_tab>
+        <indent>0</indent>
+      </item>
+      <item identifier="g4146128c78e4b66f50f9b8cce477d6ea">
+        <content_type>Quizzes::Quiz</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>Quiz 1</title>
+        <identifierref>g8c45ad01e3b5caa9308bf6d64f9873df</identifierref>
+        <position>2</position>
+        <new_tab/>
+        <indent>0</indent>
+      </item>
+      <item identifier="g86f70c38ba7ce8993fe9698e0775be3e">
+        <content_type>Attachment</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>file 1.txt</title>
+        <identifierref>g76851225168f790bf3accc552578a5f3</identifierref>
+        <position>3</position>
+        <new_tab/>
+        <indent>0</indent>
+      </item>
+      <item identifier="g84a92f8c121808e38e6cd83d41854f48">
+        <content_type>WikiPage</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>Page 1</title>
+        <identifierref>gc07d3d5fbee6d47b318d8d22f5b8dd17</identifierref>
+        <position>4</position>
+        <new_tab/>
+        <indent>0</indent>
+      </item>
+      <item identifier="g99b1ecd540e41896f9e04a17af70530b">
+        <content_type>DiscussionTopic</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>Discussion 1</title>
+        <identifierref>g8398f4f1f88e7a60cb891b4768524300</identifierref>
+        <position>5</position>
+        <new_tab/>
+        <indent>0</indent>
+      </item>
+      <item identifier="g54aed6caa2f6d1b804fa486f96d8cb2d">
+        <content_type>ContextModuleSubHeader</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>Text Header 1</title>
+        <position>6</position>
+        <new_tab/>
+        <indent>0</indent>
+      </item>
+      <item identifier="g2fa096abc05663ed31c4bdbc245b40f4">
+        <content_type>ExternalUrl</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>External URL 1</title>
+        <identifierref>g2fa096abc05663ed31c4bdbc245b40f4</identifierref>
+        <url>https://www.google.com</url>
+        <position>7</position>
+        <new_tab>false</new_tab>
+        <indent>0</indent>
+      </item>
+      <item identifier="gd19488bad58f5c27e2343b42fdaf3f7b">
+        <content_type>ContextExternalTool</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>External Tool 1</title>
+        <identifierref>gd760ddc9b321c89c774d7de1a086ecc4</identifierref>
+        <url>https://canvas-analytics-iad-prod.inscloudgate.net/lti_check_teacher_performance</url>
+        <global_identifierref>273301</global_identifierref>
+        <position>8</position>
+        <new_tab>false</new_tab>
+        <indent>0</indent>
+      </item>
+    </items>
+  </module>
+  <module identifier="g6c1a965ca8dbe9414b0e8e4c9937eae5">
+    <title>Module 2</title>
+    <workflow_state>unpublished</workflow_state>
+    <position>2</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+      <item identifier="ga11a5fca4d57fc59cdfe112cb7d4bd2d">
+        <content_type>Assignment</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>Assignment 2</title>
+        <identifierref>g80e0ee30119c983534e0e9ed51097eda</identifierref>
+        <position>1</position>
+        <new_tab>false</new_tab>
+        <indent>0</indent>
+      </item>
+      <item identifier="g69d271edf5d7c0c6aa810ba4ad75e83d">
+        <content_type>Quizzes::Quiz</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>Quiz 2</title>
+        <identifierref>g44ff74cb18eb74cfaa296d892b3b7b1a</identifierref>
+        <position>2</position>
+        <new_tab/>
+        <indent>0</indent>
+      </item>
+      <item identifier="g242c3babeb457eabb12f398df6661e4a">
+        <content_type>Attachment</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>file 2.txt</title>
+        <identifierref>g54e7a055244eada2e63832b1224f8b0a</identifierref>
+        <position>3</position>
+        <new_tab/>
+        <indent>0</indent>
+      </item>
+      <item identifier="g3d097aae61a9e70378085672d7bbaddb">
+        <content_type>WikiPage</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>Page 2</title>
+        <identifierref>g23ef596f975ac223e44b61a4b046f473</identifierref>
+        <position>4</position>
+        <new_tab/>
+        <indent>0</indent>
+      </item>
+      <item identifier="gff9447c958a4cec5d2ca24d685055b7d">
+        <content_type>DiscussionTopic</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>Discussion 2</title>
+        <identifierref>ge56dfd82d8a9ddc877b1c5dd5e318a22</identifierref>
+        <position>5</position>
+        <new_tab/>
+        <indent>0</indent>
+      </item>
+      <item identifier="g12716bf8efc1fac7e44475f13239fb2f">
+        <content_type>ContextModuleSubHeader</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>Text Header 2</title>
+        <position>6</position>
+        <new_tab/>
+        <indent>0</indent>
+      </item>
+      <item identifier="g0fbf6658ba734b18e009f86f8f1e91c4">
+        <content_type>ExternalUrl</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>External URL 2</title>
+        <identifierref>g0fbf6658ba734b18e009f86f8f1e91c4</identifierref>
+        <url>https://www.bing.com</url>
+        <position>7</position>
+        <new_tab>false</new_tab>
+        <indent>0</indent>
+      </item>
+      <item identifier="gb78820b38756fc8f60efeaa6460ef456">
+        <content_type>ContextExternalTool</content_type>
+        <workflow_state>unpublished</workflow_state>
+        <title>External Tool 2</title>
+        <identifierref>gef4ac6e33d7599c663df52f40a6abd24</identifierref>
+        <url>https://rollcall.instructure.com/launch</url>
+        <global_identifierref>90097</global_identifierref>
+        <position>8</position>
+        <new_tab>false</new_tab>
+        <indent>0</indent>
+      </item>
+    </items>
+  </module>
+</modules>

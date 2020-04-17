@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="gd4fd06a5debc34ad89b4bc06cc654469" xmlns="http://www.imsglobal.org/xsd/imsccv1p1/imscp_v1p1" xmlns:lom="http://ltsc.ieee.org/xsd/imsccv1p1/LOM/resource" xmlns:lomimscc="http://ltsc.ieee.org/xsd/imsccv1p1/LOM/manifest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsccv1p1/imscp_v1p1 http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_imscp_v1p2_v1p0.xsd http://ltsc.ieee.org/xsd/imsccv1p1/LOM/resource http://www.imsglobal.org/profile/cc/ccv1p1/LOM/ccv1p1_lomresource_v1p0.xsd http://ltsc.ieee.org/xsd/imsccv1p1/LOM/manifest http://www.imsglobal.org/profile/cc/ccv1p1/LOM/ccv1p1_lommanifest_v1p0.xsd">
+  <metadata>
+    <schema>IMS Common Cartridge</schema>
+    <schemaversion>1.1.0</schemaversion>
+    <lomimscc:lom>
+      <lomimscc:general>
+        <lomimscc:title>
+          <lomimscc:string>CommonCartridge.Core</lomimscc:string>
+        </lomimscc:title>
+      </lomimscc:general>
+      <lomimscc:lifeCycle>
+        <lomimscc:contribute>
+          <lomimscc:date>
+            <lomimscc:dateTime>2020-04-15</lomimscc:dateTime>
+          </lomimscc:date>
+        </lomimscc:contribute>
+      </lomimscc:lifeCycle>
+      <lomimscc:rights>
+        <lomimscc:copyrightAndOtherRestrictions>
+          <lomimscc:value>yes</lomimscc:value>
+        </lomimscc:copyrightAndOtherRestrictions>
+        <lomimscc:description>
+          <lomimscc:string>Private (Copyrighted) - http://en.wikipedia.org/wiki/Copyright</lomimscc:string>
+        </lomimscc:description>
+      </lomimscc:rights>
+    </lomimscc:lom>
+  </metadata>
+  <organizations>
+    <organization identifier="org_1" structure="rooted-hierarchy">
+      <item identifier="LearningModules">
+        <item identifier="gc26666ea71929f1c0a608746aadf8535">
+          <title>Module 1</title>
+          <item identifier="gd6787f45be38fea3a07d25754de3a4cb" identifierref="g57eb954df8e8581e15a4f6135181042e">
+            <title>Assignment 1</title>
+          </item>
+          <item identifier="g4146128c78e4b66f50f9b8cce477d6ea" identifierref="g8c45ad01e3b5caa9308bf6d64f9873df">
+            <title>Quiz 1</title>
+          </item>
+          <item identifier="g86f70c38ba7ce8993fe9698e0775be3e" identifierref="g76851225168f790bf3accc552578a5f3">
+            <title>file 1.txt</title>
+          </item>
+          <item identifier="g84a92f8c121808e38e6cd83d41854f48" identifierref="gc07d3d5fbee6d47b318d8d22f5b8dd17">
+            <title>Page 1</title>
+          </item>
+          <item identifier="g99b1ecd540e41896f9e04a17af70530b" identifierref="g8398f4f1f88e7a60cb891b4768524300">
+            <title>Discussion 1</title>
+          </item>
+          <item identifier="g54aed6caa2f6d1b804fa486f96d8cb2d">
+            <title>Text Header 1</title>
+          </item>
+          <item identifier="g2fa096abc05663ed31c4bdbc245b40f4" identifierref="g4acaf62089a070f9f644bc026ab85bf5">
+            <title>External URL 1</title>
+          </item>
+          <item identifier="g6b0db32b827b3d53ccc6089c822d3736" identifierref="gd19488bad58f5c27e2343b42fdaf3f7b">
+            <title>External Tool 1</title>
+          </item>
+        </item>
+        <item identifier="g6c1a965ca8dbe9414b0e8e4c9937eae5">
+          <title>Module 2</title>
+          <item identifier="ga11a5fca4d57fc59cdfe112cb7d4bd2d" identifierref="g80e0ee30119c983534e0e9ed51097eda">
+            <title>Assignment 2</title>
+          </item>
+          <item identifier="g69d271edf5d7c0c6aa810ba4ad75e83d" identifierref="g44ff74cb18eb74cfaa296d892b3b7b1a">
+            <title>Quiz 2</title>
+          </item>
+          <item identifier="g242c3babeb457eabb12f398df6661e4a" identifierref="g54e7a055244eada2e63832b1224f8b0a">
+            <title>file 2.txt</title>
+          </item>
+          <item identifier="g3d097aae61a9e70378085672d7bbaddb" identifierref="g23ef596f975ac223e44b61a4b046f473">
+            <title>Page 2</title>
+          </item>
+          <item identifier="gff9447c958a4cec5d2ca24d685055b7d" identifierref="ge56dfd82d8a9ddc877b1c5dd5e318a22">
+            <title>Discussion 2</title>
+          </item>
+          <item identifier="g12716bf8efc1fac7e44475f13239fb2f">
+            <title>Text Header 2</title>
+          </item>
+          <item identifier="g0fbf6658ba734b18e009f86f8f1e91c4" identifierref="gcd9ceada843c1e67c40ed4d97ae21ad5">
+            <title>External URL 2</title>
+          </item>
+          <item identifier="g0c7b3f6a703718b8fa2344f30dac69e7" identifierref="gb78820b38756fc8f60efeaa6460ef456">
+            <title>External Tool 2</title>
+          </item>
+        </item>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="gd918f1f73f1b0ab4711fa7111233d43b" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="course_settings/canvas_export.txt">
+      <file href="course_settings/course_settings.xml"/>
+      <file href="course_settings/module_meta.xml"/>
+      <file href="course_settings/assignment_groups.xml"/>
+      <file href="course_settings/files_meta.xml"/>
+      <file href="course_settings/media_tracks.xml"/>
+      <file href="course_settings/canvas_export.txt"/>
+    </resource>
+    <resource identifier="g23ef596f975ac223e44b61a4b046f473" type="webcontent" href="wiki_content/page-2.html">
+      <file href="wiki_content/page-2.html"/>
+    </resource>
+    <resource identifier="gc07d3d5fbee6d47b318d8d22f5b8dd17" type="webcontent" href="wiki_content/page-1.html">
+      <file href="wiki_content/page-1.html"/>
+    </resource>
+    <resource identifier="g57eb954df8e8581e15a4f6135181042e" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g57eb954df8e8581e15a4f6135181042e/assignment-1.html">
+      <file href="g57eb954df8e8581e15a4f6135181042e/assignment-1.html"/>
+      <file href="g57eb954df8e8581e15a4f6135181042e/assignment_settings.xml"/>
+    </resource>
+    <resource identifier="gd55a3dd5ad3cec6eca64b032726b2f14" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gd55a3dd5ad3cec6eca64b032726b2f14/assignment-11.html">
+      <file href="gd55a3dd5ad3cec6eca64b032726b2f14/assignment-11.html"/>
+      <file href="gd55a3dd5ad3cec6eca64b032726b2f14/assignment_settings.xml"/>
+    </resource>
+    <resource identifier="g80e0ee30119c983534e0e9ed51097eda" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g80e0ee30119c983534e0e9ed51097eda/assignment-2.html">
+      <file href="g80e0ee30119c983534e0e9ed51097eda/assignment-2.html"/>
+      <file href="g80e0ee30119c983534e0e9ed51097eda/assignment_settings.xml"/>
+    </resource>
+    <resource identifier="g6a7abfc27ce1fce27c8ec822d3018d6a" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g6a7abfc27ce1fce27c8ec822d3018d6a/assignment-21.html">
+      <file href="g6a7abfc27ce1fce27c8ec822d3018d6a/assignment-21.html"/>
+      <file href="g6a7abfc27ce1fce27c8ec822d3018d6a/assignment_settings.xml"/>
+    </resource>
+    <resource identifier="ge56dfd82d8a9ddc877b1c5dd5e318a22" type="imsdt_xmlv1p1">
+      <file href="ge56dfd82d8a9ddc877b1c5dd5e318a22.xml"/>
+      <dependency identifierref="gdf99140d4fd4f7419b297c49b0386d28"/>
+    </resource>
+    <resource identifier="gdf99140d4fd4f7419b297c49b0386d28" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gdf99140d4fd4f7419b297c49b0386d28.xml">
+      <file href="gdf99140d4fd4f7419b297c49b0386d28.xml"/>
+    </resource>
+    <resource identifier="g8398f4f1f88e7a60cb891b4768524300" type="imsdt_xmlv1p1">
+      <file href="g8398f4f1f88e7a60cb891b4768524300.xml"/>
+      <dependency identifierref="g98866fad5765c30d2aa083174c9ddd53"/>
+    </resource>
+    <resource identifier="g98866fad5765c30d2aa083174c9ddd53" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g98866fad5765c30d2aa083174c9ddd53.xml">
+      <file href="g98866fad5765c30d2aa083174c9ddd53.xml"/>
+    </resource>
+    <resource identifier="g4acaf62089a070f9f644bc026ab85bf5" type="imswl_xmlv1p1">
+      <file href="g4acaf62089a070f9f644bc026ab85bf5.xml"/>
+    </resource>
+    <resource identifier="gcd9ceada843c1e67c40ed4d97ae21ad5" type="imswl_xmlv1p1">
+      <file href="gcd9ceada843c1e67c40ed4d97ae21ad5.xml"/>
+    </resource>
+    <resource identifier="g8c45ad01e3b5caa9308bf6d64f9873df" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="g8c45ad01e3b5caa9308bf6d64f9873df/assessment_qti.xml"/>
+      <dependency identifierref="g9496c7e508537d157050965e702bd37c"/>
+    </resource>
+    <resource identifier="g9496c7e508537d157050965e702bd37c" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g8c45ad01e3b5caa9308bf6d64f9873df/assessment_meta.xml">
+      <file href="g8c45ad01e3b5caa9308bf6d64f9873df/assessment_meta.xml"/>
+      <file href="non_cc_assessments/g8c45ad01e3b5caa9308bf6d64f9873df.xml.qti"/>
+    </resource>
+    <resource identifier="g44ff74cb18eb74cfaa296d892b3b7b1a" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="g44ff74cb18eb74cfaa296d892b3b7b1a/assessment_qti.xml"/>
+      <dependency identifierref="ge1dfe4e4e2aa45fe096522d08da0ca22"/>
+    </resource>
+    <resource identifier="ge1dfe4e4e2aa45fe096522d08da0ca22" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g44ff74cb18eb74cfaa296d892b3b7b1a/assessment_meta.xml">
+      <file href="g44ff74cb18eb74cfaa296d892b3b7b1a/assessment_meta.xml"/>
+      <file href="non_cc_assessments/g44ff74cb18eb74cfaa296d892b3b7b1a.xml.qti"/>
+    </resource>
+    <resource type="webcontent" identifier="g76851225168f790bf3accc552578a5f3" href="web_resources/file 1.txt">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/file 1.txt"/>
+    </resource>
+    <resource type="webcontent" identifier="g54e7a055244eada2e63832b1224f8b0a" href="web_resources/file 2.txt">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/file 2.txt"/>
+    </resource>
+    <resource identifier="g49a39a5f4c6166d235738bf72cdfbedb" type="imsbasiclti_xmlv1p0">
+      <file href="g49a39a5f4c6166d235738bf72cdfbedb.xml"/>
+    </resource>
+    <resource identifier="gf55b6d8e8d75c1e58a2e037c6031e418" type="imsbasiclti_xmlv1p0">
+      <file href="gf55b6d8e8d75c1e58a2e037c6031e418.xml"/>
+    </resource>
+  </resources>
+</manifest>

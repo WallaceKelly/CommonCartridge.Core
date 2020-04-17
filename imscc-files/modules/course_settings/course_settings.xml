@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<course identifier="gd918f1f73f1b0ab4711fa7111233d43b" xmlns="http://canvas.instructure.com/xsd/cccv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://canvas.instructure.com/xsd/cccv1p0 https://canvas.instructure.com/xsd/cccv1p0.xsd">
+  <title>CommonCartridge.Core</title>
+  <course_code>CommonCartridge.Core</course_code>
+  <start_at/>
+  <conclude_at/>
+  <is_public>false</is_public>
+  <allow_student_wiki_edits>false</allow_student_wiki_edits>
+  <lock_all_announcements>false</lock_all_announcements>
+  <allow_student_organized_groups>true</allow_student_organized_groups>
+  <default_view>modules</default_view>
+  <license>private</license>
+  <usage_rights_required>false</usage_rights_required>
+  <restrict_student_future_view>false</restrict_student_future_view>
+  <restrict_student_past_view>false</restrict_student_past_view>
+  <grading_standard_enabled>false</grading_standard_enabled>
+  <storage_quota>524288000</storage_quota>
+  <overridden_course_visibility/>
+  <root_account_uuid>ff2e5780-fa5b-012d-f7b3-123135003972</root_account_uuid>
+  <default_post_policy>
+    <post_manually>false</post_manually>
+  </default_post_policy>
+</course>
