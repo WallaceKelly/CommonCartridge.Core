@@ -4,16 +4,16 @@ open Xunit
 open CommonCartridge
 
 [<Theory>]
-[<InlineData(ImsccFilePaths.EmptyManifest)>]
-[<InlineData(ImsccFilePaths.ModulesManifest)>]
+[<InlineData(ImsccTestFilePaths.EmptyManifest)>]
+[<InlineData(ImsccTestFilePaths.ModulesManifest)>]
 let ``Schema.Load loads the manifest without throwing``(path: string) =
     // arrange, act assert
     ImsccManifest.Schema.Load(path)
     |> ignore
 
 [<Theory>]
-[<InlineData(ImsccFilePaths.EmptyManifest)>]
-[<InlineData(ImsccFilePaths.ModulesManifest)>]
+[<InlineData(ImsccTestFilePaths.EmptyManifest)>]
+[<InlineData(ImsccTestFilePaths.ModulesManifest)>]
 let ``Schema.Load loads empty manifest as identical XML``(path: string) =
     // arrange, act assert
     ImsccManifest.Schema.Load(path).XElement
@@ -24,7 +24,7 @@ let ``Schema.Load loads empty manifest as identical XML``(path: string) =
 let ``Schema.Load reads module titles from manifest file``() =
     // arrange, act
     let titles = 
-        ImsccManifest.Schema.Load(ImsccFilePaths.ModulesManifest).Manifest.Value
+        ImsccManifest.Schema.Load(ImsccTestFilePaths.ModulesManifest).Manifest.Value
         |> CommonCartridge.ImsccModule.fromManifest
         |> Seq.map(fun m -> m.Title)
     // assert
@@ -37,10 +37,10 @@ let ``Schema.Load reads module titles from manifest file``() =
 let ``Schema.Load reads activity titles from manifest file``() =
     // arrange, act
     let titles = 
-        ImsccManifest.Schema.Load(ImsccFilePaths.ModulesManifest).Manifest.Value
+        ImsccManifest.Schema.Load(ImsccTestFilePaths.ModulesManifest).Manifest.Value
         |> CommonCartridge.ImsccModule.fromManifest
         |> Seq.collect(fun m -> m.Items)
-        |> Seq.map(fun i -> i.Title)
+        |> Seq.map(fun i -> i.ModuleTitle)
     // assert
     Assert.NotEmpty(titles)
     Assert.Equal(16, titles |> Seq.length)

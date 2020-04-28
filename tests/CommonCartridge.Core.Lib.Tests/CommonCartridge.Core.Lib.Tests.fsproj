@@ -22,6 +22,8 @@
     </None>
     <Compile Include="TestHelpers.fs" />
     <Compile Include="ImsccFilePaths.fs" />
+    <Compile Include="ImsccResourcesTests.fs" />
+    <Compile Include="ImsccModulesTests.fs" />
     <Compile Include="ImsccFilesTests.fs" />
     <Compile Include="ManifestsTests.fs" />
     <Compile Include="Program.fs" />

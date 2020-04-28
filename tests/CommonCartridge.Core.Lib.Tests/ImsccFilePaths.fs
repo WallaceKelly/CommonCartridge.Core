@@ -1,4 +1,4 @@
-﻿module ImsccFilePaths
+﻿module ImsccTestFilePaths
 
 let [<Literal>] Empty = "imscc-files/empty.imscc"
 let [<Literal>] Modules = "imscc-files/modules.imscc"

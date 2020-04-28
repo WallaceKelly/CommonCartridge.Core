@@ -32,7 +32,11 @@ let ``WordModules.append appends a activities to a Word file`` () =
     let path = Path.GetTempFileName()
     try
         let wordFile = ImsccWordFile.create path
-        let activity = { ImsccModuleItem.Title = "Activity 1"; Identifier = ""; IdentifierRef = "" }
+        let activity =
+            { ImsccModuleItem.ModuleTitle = "Activity 1"
+              Identifier = ""
+              IdentifierRef = ""
+              Type = ImsccResourceType.Assignment }
         let modul = { ImsccModule.Title = "Module A"; Identifier = ""; Items = [| activity |] }
         // act
         modul |> WordModule.append wordFile

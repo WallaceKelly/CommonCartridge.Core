@@ -11,12 +11,16 @@ open CommonCartridge.Word
 let convertToWord (dst: string) (src: string) =
     
     let imsccFile = ImsccFile.load src
-    let modules = ImsccModule.fromFile imsccFile
-    let wordFile = ImsccWordFile.create dst
+    try
+        let wordFile = ImsccWordFile.create dst
+        let modules = ImsccModule.fromFile imsccFile
+        // TODO: make resources a member of modules
+        // let resources = ImsccResource.fromFile imsccFile
     
-    modules |> WordModule.appendAll wordFile
-    wordFile |> ImsccWordFile.saveFile
-    imsccFile |> ImsccFile.unload
+        modules |> WordModule.appendAll wordFile
+        wordFile |> ImsccWordFile.saveFile
+    finally
+        imsccFile |> ImsccFile.unload
 
 [<EntryPoint>]
 let main argv =
