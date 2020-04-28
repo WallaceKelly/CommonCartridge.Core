@@ -5,8 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="WordFiles.fs" />
-    <Compile Include="WordModules.fs" />
+    <Compile Include="ImsccWordFile.fs" />
+    <Compile Include="WordActivity.fs" />
+    <Compile Include="WordModule.fs" />
   </ItemGroup>
 
   <ItemGroup>
