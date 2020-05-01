@@ -3,21 +3,18 @@
 open System.IO
 open System.IO.Compression
 
-[<CLIMutable>]
-type ImsccFile = {
-    Path: string
-    ExtractedFolder: string
-}
-
-module ImsccFile =
-
-    let load(path: string) = 
+type ImsccFile(path: string) =
     
-        let extractedFolder = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName())
+    let extractedFolder = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName())
+
+    do
         ZipFile.ExtractToDirectory(path, extractedFolder)
 
-        { Path = path
-          ExtractedFolder = extractedFolder }
+    member val Path = path
+    member val ExtractedFolder = extractedFolder
 
-    let unload(imscc: ImsccFile) =
-        Directory.Delete(imscc.ExtractedFolder, true)
+    interface System.IDisposable with
+        member x.Dispose() =
+            try
+                Directory.Delete(x.ExtractedFolder, true)
+            with _ -> ()

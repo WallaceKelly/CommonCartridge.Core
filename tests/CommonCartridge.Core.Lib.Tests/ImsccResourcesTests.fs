@@ -21,23 +21,19 @@ open CommonCartridge
 [<InlineData("Quiz 2", ImsccResourceType.Quiz)>]
 let ``ImsccResourceType.getResourceType can recognize activity types`` (title: string) (resourceType: ImsccResourceType) =
     // arrange
-    let imsccFile = ImsccFile.load ImsccTestFilePaths.Modules
-    try
-        let modul =
-            imsccFile
-            |> ImsccModule.fromFile 
-            |> Seq.collect(fun m -> m.Items)
-            |> Seq.where(fun m -> m.ModuleTitle = title)
-            |> Seq.exactlyOne
-        // act
-        let resource =
-            imsccFile
-            |> ImsccResource.fromFile
-            |> Seq.where(fun r -> r.Identifier = modul.IdentifierRef)
-            |> Seq.exactlyOne 
-        // assert
-        Assert.Equal(resourceType, resource.Type)
-    finally
-        ImsccFile.unload imsccFile
-
+    use imsccFile = new ImsccFile(ImsccTestFilePaths.Modules)
+    let modul =
+        imsccFile
+        |> ImsccModule.fromFile 
+        |> Seq.collect(fun m -> m.Items)
+        |> Seq.where(fun m -> m.ModuleTitle = title)
+        |> Seq.exactlyOne
+    // act
+    let resource =
+        imsccFile
+        |> ImsccResource.fromFile
+        |> Seq.where(fun r -> r.Identifier = modul.IdentifierRef)
+        |> Seq.exactlyOne 
+    // assert
+    Assert.Equal(resourceType, resource.Type)
 

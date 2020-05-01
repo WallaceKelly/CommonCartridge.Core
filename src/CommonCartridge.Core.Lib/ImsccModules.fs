@@ -57,4 +57,5 @@ module ImsccModule =
         |> Option.defaultValue [||]
         |> Seq.map (createModule resources)
 
-    let fromFile = ImsccManifest.read >> fromManifest
+    let fromFile (imsccFile: ImsccFile) =
+        imsccFile |> ImsccManifest.read |> fromManifest

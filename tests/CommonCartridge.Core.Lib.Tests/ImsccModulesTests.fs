@@ -8,13 +8,10 @@ open CommonCartridge
 [<InlineData(ImsccTestFilePaths.Modules)>]
 let ``ImsccModule.fromManifest can read modules without throwing`` (path: string) =
     // arrange
-    let imsccFile = ImsccFile.load path
-    try
-        // act
-        // assert
-        imsccFile |> ImsccModule.fromFile |> ignore
-    finally
-        ImsccFile.unload imsccFile
+    use imsccFile = new ImsccFile(path)
+    // act
+    // assert
+    imsccFile |> ImsccModule.fromFile |> ignore
 
 [<Theory>]
 [<InlineData("Assignment 1", ImsccResourceType.Assignment)>]
@@ -31,14 +28,11 @@ let ``ImsccModule.fromManifest can read modules without throwing`` (path: string
 [<InlineData("Quiz 2", ImsccResourceType.Quiz)>]
 let ``ImsccModule.fromManifest can read activity titles`` (title: string) (resourceType: ImsccResourceType) =
     // arrange
-    let imsccFile = ImsccFile.load ImsccTestFilePaths.Modules
-    try
-        // act
-        imsccFile
-        |> ImsccModule.fromFile
-        |> Seq.collect(fun m -> m.Items)
-        |> Seq.where(fun i -> i.ModuleTitle = title)
-        |> Seq.exactlyOne // assert
-        |> ignore
-    finally
-        ImsccFile.unload imsccFile
+    use imsccFile = new ImsccFile(ImsccTestFilePaths.Modules)
+    // act
+    imsccFile
+    |> ImsccModule.fromFile
+    |> Seq.collect(fun m -> m.Items)
+    |> Seq.where(fun i -> i.ModuleTitle = title)
+    |> Seq.exactlyOne // assert
+    |> ignore

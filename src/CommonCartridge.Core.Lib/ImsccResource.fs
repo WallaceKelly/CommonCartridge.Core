@@ -66,4 +66,5 @@ module internal ImsccResource =
         manifest.Resources.Resources
         |> Seq.map createResource
 
-    let fromFile = ImsccManifest.read >> fromManifest
+    let fromFile (imsccFile: ImsccFile) =
+        imsccFile |> ImsccManifest.read |> fromManifest
