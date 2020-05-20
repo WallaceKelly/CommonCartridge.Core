@@ -20,11 +20,18 @@
     <None Include="..\..\imscc-files\modules\imsmanifest.xml" Link="imscc-files/modules/imsmanifest.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="..\..\imscc-files\modules\g4acaf62089a070f9f644bc026ab85bf5.xml" Link="imscc-files/modules/g4acaf62089a070f9f644bc026ab85bf5.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\imscc-files\modules\gcd9ceada843c1e67c40ed4d97ae21ad5.xml" Link="imscc-files/modules/gcd9ceada843c1e67c40ed4d97ae21ad5.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Compile Include="TestHelpers.fs" />
     <Compile Include="ImsccFilePaths.fs" />
     <Compile Include="ImsccResourcesTests.fs" />
     <Compile Include="ImsccModulesTests.fs" />
     <Compile Include="ImsccFilesTests.fs" />
+    <Compile Include="ImsccWebLinksTests.fs" />
     <Compile Include="ManifestsTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>

@@ -8,6 +8,7 @@
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="ImsccFiles.fs" />
     <Compile Include="ImsccManifests.fs" />
+    <Compile Include="ImsccWebLinks.fs" />
     <Compile Include="ImsccResource.fs" />
     <Compile Include="ImsccModules.fs" />
   </ItemGroup>
