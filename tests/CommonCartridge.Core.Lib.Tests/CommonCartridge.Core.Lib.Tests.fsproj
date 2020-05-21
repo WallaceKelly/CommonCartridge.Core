@@ -28,11 +28,13 @@
     </None>
     <Compile Include="TestHelpers.fs" />
     <Compile Include="ImsccFilePaths.fs" />
-    <Compile Include="ImsccResourcesTests.fs" />
-    <Compile Include="ImsccModulesTests.fs" />
     <Compile Include="ImsccFilesTests.fs" />
+    <Compile Include="ImsccManifestsTests.fs" />
     <Compile Include="ImsccWebLinksTests.fs" />
-    <Compile Include="ManifestsTests.fs" />
+    <Compile Include="CanvasResourcesTests.fs" />
+    <Compile Include="CanvasFileResourcesTests.fs" />
+    <Compile Include="CanvasActivitiesTests.fs" />
+    <Compile Include="CanvasModulesTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

@@ -9,8 +9,8 @@ module ImsccWebLink =
 
     type internal Schema = XmlProvider< Schema = SchemaUri >
 
-    let read (imsccFile: ImsccFile) (identifier: string) =
-        let filePath = Path.Combine(imsccFile.ExtractedFolder, identifier)
+    let read (manifest: ImsccManifest) (identifier: string) =
+        let filePath = Path.Combine(manifest.ExtractedFolder, identifier)
         Schema.Load(filePath)
 
 
