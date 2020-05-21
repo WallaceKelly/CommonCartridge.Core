@@ -17,4 +17,4 @@ type ImsccFile(path: string) =
         member x.Dispose() =
             try
                 Directory.Delete(x.ExtractedFolder, true)
-            with _ -> ()
+            with _ -> () // TODO: add a logging mechanism
