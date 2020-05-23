@@ -7,13 +7,13 @@ open CommonCartridge.Canvas
 [<Theory>]
 [<InlineData(ImsccTestFilePaths.Empty)>]
 [<InlineData(ImsccTestFilePaths.Modules)>]
-let ``CanvasModule.fromFile can read modules without throwing`` (path: string) =
+let ``CanvasModules.inManifest can read modules without throwing`` (path: string) =
     // arrange
     use imsccFile = new ImsccFile(path)
     let manifest = ImsccManifest.read imsccFile
     // act
     // assert
-    manifest |> CanvasModule.fromManifest |> ignore
+    manifest |> CanvasModules.inManifest |> ignore
 
 [<Theory>]
 [<InlineData("Assignment 1", CanvasResourceType.Assignment)>]
@@ -28,13 +28,13 @@ let ``CanvasModule.fromFile can read modules without throwing`` (path: string) =
 [<InlineData("Page 2", CanvasResourceType.Page)>]
 [<InlineData("Quiz 1", CanvasResourceType.Quiz)>]
 [<InlineData("Quiz 2", CanvasResourceType.Quiz)>]
-let ``CanvasModule.fromFile can read module titles`` (title: string) (resourceType: CanvasResourceType) =
+let ``CanvasModules.inManifest can read module titles`` (title: string) (resourceType: CanvasResourceType) =
     // arrange
     use imsccFile = new ImsccFile(ImsccTestFilePaths.Modules)
     let manifest = ImsccManifest.read imsccFile
     // act
     manifest
-    |> CanvasModule.fromManifest
+    |> CanvasModules.inManifest
     |> Seq.collect(fun m -> m.Items)
     |> Seq.where(fun i -> i.Type = resourceType)
     |> Seq.where(fun i -> i.ModuleItemTitle = title)

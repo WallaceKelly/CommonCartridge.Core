@@ -7,7 +7,7 @@ open System.IO
 [<Theory>]
 [<InlineData(ImsccTestFilePaths.Empty)>]
 [<InlineData(ImsccTestFilePaths.Modules)>]
-let ``ImsccFiles.load and ImsccFiles.unload do not throw`` (path: string) =
+let ``ImsccFiles.Dispose and ImsccFiles.unload do not throw`` (path: string) =
     // arrange, act, assert
     use imsccFile = new ImsccFile(path)
     (
@@ -16,7 +16,7 @@ let ``ImsccFiles.load and ImsccFiles.unload do not throw`` (path: string) =
 [<Theory>]
 [<InlineData(ImsccTestFilePaths.Empty)>]
 [<InlineData(ImsccTestFilePaths.Modules)>]
-let ``ImsccFiles.unload deletes extracted IMSCC files after unload`` (path: string) =
+let ``ImsccFile.Dispose deletes extracted IMSCC files after unload`` (path: string) =
     // arrange
     let mutable extractedFolder = ""
     using (new ImsccFile(path)) (fun imsccFile ->
@@ -29,7 +29,7 @@ let ``ImsccFiles.unload deletes extracted IMSCC files after unload`` (path: stri
 [<Theory>]
 [<InlineData(ImsccTestFilePaths.Empty)>]
 [<InlineData(ImsccTestFilePaths.Modules)>]
-let ``ImsccFiles.load extracts manifest file from IMSCC files`` (path: string) =
+let ``ImsccFile.ctor extracts manifest file from IMSCC files`` (path: string) =
     // arrange
     use imsccFile = new ImsccFile(path)
     // act
@@ -40,7 +40,7 @@ let ``ImsccFiles.load extracts manifest file from IMSCC files`` (path: string) =
 [<Theory>]
 [<InlineData(ImsccTestFilePaths.Empty)>]
 [<InlineData(ImsccTestFilePaths.Modules)>]
-let ``ImsccFiles.load extracts course_settings folder from IMSCC files`` (path: string) =
+let ``ImsccFile.ctor extracts course_settings folder from IMSCC files`` (path: string) =
     // arrange
     use imsccFile = new ImsccFile(path)
     // act

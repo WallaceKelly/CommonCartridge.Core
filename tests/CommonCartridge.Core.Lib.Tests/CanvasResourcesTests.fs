@@ -26,14 +26,14 @@ let ``CanvasResourceType.getResourceType can recognize activity types`` (title: 
     let manifest = ImsccManifest.read imsccFile
     let modul =
         manifest
-        |> CanvasModule.fromManifest 
+        |> CanvasModules.inManifest 
         |> Seq.collect(fun m -> m.Items)
         |> Seq.where(fun m -> m.ModuleItemTitle = title)
         |> Seq.exactlyOne
     // act
     let resource =
         manifest
-        |> CanvasResource.fromManifest
+        |> CanvasResources.inManifest
         |> Seq.where(fun r -> r.Identifier = modul.IdentifierRef)
         |> Seq.exactlyOne 
     // assert

@@ -16,7 +16,7 @@ module CanvasActivity =
     let private getCanvasFileActivity manifest identifier =
         identifier
         |> CanvasResource.getByIdentifier manifest
-        |> Option.map(CanvasFileResource.fromResource manifest)
+        |> Option.map(CanvasFileResource.ofCanvasResource manifest)
         |> Option.map(CanvasActivity.File)
 
     let private getByIdentifierInternal manifest (moduleItemTitle: string) (resource: CanvasResource) =

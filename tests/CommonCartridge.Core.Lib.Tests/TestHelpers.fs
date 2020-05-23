@@ -17,7 +17,7 @@ let savesIdenticalXml (srcFilePath: string) (data: XElement) =
 
 let internal getCanvasResourcesOfType (resourceType: CanvasResourceType) (manifest: ImsccManifest) =
     manifest
-    |> CanvasModule.fromManifest 
+    |> CanvasModules.inManifest 
     |> Seq.collect(fun m -> m.Items
                             |> Seq.where(fun i -> i.Type = resourceType))
     |> Seq.map(fun i -> i.IdentifierRef)

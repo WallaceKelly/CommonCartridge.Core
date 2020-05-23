@@ -11,7 +11,7 @@ type CanvasFileResource =
 
 module internal CanvasFileResource =
 
-    let fromResource (manifest: ImsccManifest) (resource: CanvasResource) =
+    let ofCanvasResource (manifest: ImsccManifest) (resource: CanvasResource) =
         if Array.isEmpty resource.Files then
             raise(ArgumentException("Cannot create CanvasFileResource without a file reference."))
         if Array.length resource.Files > 1 then

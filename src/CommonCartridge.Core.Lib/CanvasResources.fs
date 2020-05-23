@@ -56,18 +56,21 @@ type internal CanvasResource =
 
 module internal CanvasResource =
 
-    let private createResource (resource: ImsccManifest.Resource) =
+    let createResource (resource: ImsccManifest.Resource) =
         { CanvasResource.Identifier = resource.Identifier
           Type = CanvasResourceType.getResourceType resource
           Href = resource.Href |> Option.defaultValue ""
           Files = resource.Files |> Array.map(fun f -> f.Href) }
-
-    let fromManifest (manifest: ImsccManifest) =
-        manifest.Resources
-        |> Seq.map createResource
 
     let getByIdentifier (manifest: ImsccManifest) (identifier: string) =
         manifest.Resources
         |> Seq.where(fun r -> r.Identifier = identifier)
         |> Seq.tryExactlyOne
         |> Option.map createResource
+
+module internal CanvasResources =
+
+    let inManifest (manifest: ImsccManifest) =
+        manifest.Resources
+        |> Seq.map(CanvasResource.createResource)
+

@@ -11,7 +11,7 @@ type CanvasModule =
       Identifier: string
       Items: CanvasModuleItem[] }
 
-module CanvasModule =
+module CanvasModules =
 
     let private createModuleItem (item: ImsccManifest.Item, resource: CanvasResource option) =
         let typ = 
@@ -37,11 +37,11 @@ module CanvasModule =
             |> Array.map(fun i -> i, getResource i.Identifierref)
             |> Array.map createModuleItem }
 
-    let fromManifest (manifest: ImsccManifest) =
+    let inManifest (manifest: ImsccManifest) =
 
         let resources =
             manifest
-            |> CanvasResource.fromManifest
+            |> CanvasResources.inManifest
             |> Seq.map(fun r -> r.Identifier, r)
             |> dict
 
