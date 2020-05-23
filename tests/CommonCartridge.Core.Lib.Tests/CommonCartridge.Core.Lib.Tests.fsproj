@@ -33,6 +33,7 @@
     <Compile Include="ImsccWebLinksTests.fs" />
     <Compile Include="CanvasResourcesTests.fs" />
     <Compile Include="CanvasFileResourcesTests.fs" />
+    <Compile Include="CanvasPageResourcesTests.fs" />
     <Compile Include="CanvasActivitiesTests.fs" />
     <Compile Include="CanvasModulesTests.fs" />
     <Compile Include="Program.fs" />
