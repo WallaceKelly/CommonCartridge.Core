@@ -11,8 +11,9 @@
     <Compile Include="ImsccWebLink.fs" />
     <Compile Include="CanvasHtmlParsing.fs" />
     <Compile Include="CanvasResources.fs" />
-    <Compile Include="CanvasFileResource.fs" />
     <Compile Include="CanvasPageResource.fs" />
+    <Compile Include="CanvasFileResource.fs" />
+    <Compile Include="CanvasAssignmentResource.fs" />
     <Compile Include="CanvasModuleItem.fs" />
     <Compile Include="CanvasActivity.fs" />
     <Compile Include="CanvasModules.fs" />

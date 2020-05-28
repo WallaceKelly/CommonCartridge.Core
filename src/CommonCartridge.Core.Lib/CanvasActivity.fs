@@ -6,7 +6,7 @@ type CanvasActivity =
     | Unsupported of string
     | Page of CanvasPageResource
     | File of CanvasFileResource
-    | Assignment 
+    | Assignment of CanvasAssignmentResource 
     | Quiz
     | Discussion
     | External
@@ -25,10 +25,17 @@ module CanvasActivity =
         |> Option.map(CanvasPageResource.ofCanvasResource manifest)
         |> Option.map(CanvasActivity.Page)
 
+    let private getCanvasAssignmentActivity manifest identifier =
+        identifier
+        |> CanvasResource.getByIdentifier manifest
+        |> Option.map(CanvasAssignmentResource.ofCanvasResource manifest)
+        |> Option.map(CanvasActivity.Assignment)
+
     let private getByIdentifierInternal manifest (moduleItemTitle: string) (resource: CanvasResource) =
         match resource.Type with
         | CanvasResourceType.File -> getCanvasFileActivity manifest resource.Identifier
         | CanvasResourceType.Page -> getCanvasPageActivity manifest resource.Identifier
+        | CanvasResourceType.Assignment -> getCanvasAssignmentActivity manifest resource.Identifier
         | t -> Some(Unsupported(sprintf "%s: %s" (t.ToString()) moduleItemTitle))
 
     let getByIdentifier manifest identifier =
