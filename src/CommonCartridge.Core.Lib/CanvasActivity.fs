@@ -8,7 +8,7 @@ type CanvasActivity =
     | Page of CanvasPageResource
     | File of CanvasFileResource
     | Assignment of CanvasAssignmentResource 
-    | Quiz
+    | Quiz of CanvasQuizResource
     | Discussion
     | External
 
@@ -26,6 +26,7 @@ module CanvasActivity =
         | CanvasResourceType.File -> create CanvasFileResource.ofCanvasResource CanvasActivity.File
         | CanvasResourceType.Page -> create CanvasPageResource.ofCanvasResource CanvasActivity.Page
         | CanvasResourceType.Assignment -> create CanvasAssignmentResource.ofCanvasResource CanvasActivity.Assignment
+        | CanvasResourceType.Quiz -> create CanvasQuizResource.ofCanvasResource CanvasActivity.Quiz
         | t ->
             moduleItemTitle
             |> sprintf "%s: %s" (t.ToString())

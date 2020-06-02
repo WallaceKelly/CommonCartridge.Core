@@ -52,15 +52,21 @@ type internal CanvasResource =
     { Identifier: string
       Type: CanvasResourceType
       Href: string
-      Files: string[] }
+      Files: string[]
+      Dependencies: string[] }
 
 module internal CanvasResource =
+
+    let failfor (resource: CanvasResource) (msg: string) =
+        failwith (sprintf "%s (%s)" msg resource.Identifier)
+        ()
 
     let createResource (resource: ImsccManifest.Resource) =
         { CanvasResource.Identifier = resource.Identifier
           Type = CanvasResourceType.getResourceType resource
           Href = resource.Href |> Option.defaultValue ""
-          Files = resource.Files |> Array.map(fun f -> f.Href) }
+          Files = resource.Files |> Array.map(fun f -> f.Href)
+          Dependencies = resource.Dependencies |> Array.map(fun f -> f.Identifierref) }
 
     let getByIdentifier (manifest: ImsccManifest) (identifier: string) =
         manifest.Resources
