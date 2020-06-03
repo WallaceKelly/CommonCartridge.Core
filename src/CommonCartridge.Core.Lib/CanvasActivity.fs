@@ -1,42 +1,37 @@
 ﻿namespace CommonCartridge.Canvas
 
 open System
+open CommonCartridge
 
 type CanvasActivity =
     | Unsupported of string
     | Page of CanvasPageResource
     | File of CanvasFileResource
     | Assignment of CanvasAssignmentResource 
-    | Quiz
+    | Quiz of CanvasQuizResource
     | Discussion
     | External
 
 module CanvasActivity =
 
-    let private getCanvasFileActivity manifest identifier =
-        identifier
-        |> CanvasResource.getByIdentifier manifest
-        |> Option.map(CanvasFileResource.ofCanvasResource manifest)
-        |> Option.map(CanvasActivity.File)
+    let private getByIdentifierInternal manifest moduleItemTitle (resource: CanvasResource) =
 
-    let private getCanvasPageActivity manifest identifier =
-        identifier
-        |> CanvasResource.getByIdentifier manifest
-        |> Option.map(CanvasPageResource.ofCanvasResource manifest)
-        |> Option.map(CanvasActivity.Page)
+        let create ofResource toActivity =
+            resource.Identifier
+            |> CanvasResource.getByIdentifier manifest
+            |> Option.map(ofResource manifest)
+            |> Option.map(toActivity)
 
-    let private getCanvasAssignmentActivity manifest identifier =
-        identifier
-        |> CanvasResource.getByIdentifier manifest
-        |> Option.map(CanvasAssignmentResource.ofCanvasResource manifest)
-        |> Option.map(CanvasActivity.Assignment)
-
-    let private getByIdentifierInternal manifest (moduleItemTitle: string) (resource: CanvasResource) =
         match resource.Type with
-        | CanvasResourceType.File -> getCanvasFileActivity manifest resource.Identifier
-        | CanvasResourceType.Page -> getCanvasPageActivity manifest resource.Identifier
-        | CanvasResourceType.Assignment -> getCanvasAssignmentActivity manifest resource.Identifier
-        | t -> Some(Unsupported(sprintf "%s: %s" (t.ToString()) moduleItemTitle))
+        | CanvasResourceType.File -> create CanvasFileResource.ofCanvasResource CanvasActivity.File
+        | CanvasResourceType.Page -> create CanvasPageResource.ofCanvasResource CanvasActivity.Page
+        | CanvasResourceType.Assignment -> create CanvasAssignmentResource.ofCanvasResource CanvasActivity.Assignment
+        | CanvasResourceType.Quiz -> create CanvasQuizResource.ofCanvasResource CanvasActivity.Quiz
+        | t ->
+            moduleItemTitle
+            |> sprintf "%s: %s" (t.ToString())
+            |> Unsupported
+            |> Some
 
     let getByIdentifier manifest identifier =
         identifier
@@ -47,4 +42,3 @@ module CanvasActivity =
         item.IdentifierRef
         |> CanvasResource.getByIdentifier manifest
         |> Option.bind(getByIdentifierInternal manifest item.ModuleItemTitle)
-    

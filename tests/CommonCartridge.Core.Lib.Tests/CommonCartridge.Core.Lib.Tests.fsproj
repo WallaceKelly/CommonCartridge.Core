@@ -26,15 +26,23 @@
     <None Include="..\..\imscc-files\modules\gcd9ceada843c1e67c40ed4d97ae21ad5.xml" Link="imscc-files/modules/gcd9ceada843c1e67c40ed4d97ae21ad5.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="..\..\imscc-files\modules\g8c45ad01e3b5caa9308bf6d64f9873df\assessment_meta.xml" Link="imscc-files/modules/g8c45ad01e3b5caa9308bf6d64f9873df/assessment_meta.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\imscc-files\modules\g44ff74cb18eb74cfaa296d892b3b7b1a\assessment_meta.xml" Link="imscc-files/modules/g44ff74cb18eb74cfaa296d892b3b7b1a/assessment_meta.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Compile Include="TestHelpers.fs" />
     <Compile Include="ImsccFilePaths.fs" />
     <Compile Include="ImsccFilesTests.fs" />
     <Compile Include="ImsccManifestsTests.fs" />
     <Compile Include="ImsccWebLinksTests.fs" />
+    <Compile Include="ImsccQuizzesTests.fs" />
     <Compile Include="CanvasResourcesTests.fs" />
     <Compile Include="CanvasPageResourcesTests.fs" />
     <Compile Include="CanvasFileResourcesTests.fs" />
     <Compile Include="CanvasAssignmentResourcesTests.fs" />
+    <Compile Include="CanvasQuizzesResourcesTests.fs" />
     <Compile Include="CanvasActivitiesTests.fs" />
     <Compile Include="CanvasModulesTests.fs" />
     <Compile Include="Program.fs" />

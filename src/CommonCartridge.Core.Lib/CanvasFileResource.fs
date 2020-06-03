@@ -10,18 +10,23 @@ type CanvasFileResource =
 
 module internal CanvasFileResource =
 
-    let private failfor (resource: CanvasResource) (msg: string) =
-        failwith (sprintf "%s (%s)" msg resource.Identifier)
-        ()
-
     let ofCanvasResource (manifest: ImsccManifest) (resource: CanvasResource) =
+
         if Array.isEmpty resource.Files then
-            failfor resource "Cannot create CanvasFileResource without a file reference."
+            "Cannot create CanvasFileResource without a file reference."
+            |> CanvasResource.createFailMessage resource 
+            |> failwith
+
         if Array.length resource.Files > 1 then
-            failfor resource "Cannot create CanvasFileResource with multiple files."
+            "Cannot create CanvasFileResource with multiple files."
+            |> CanvasResource.createFailMessage resource 
+            |> failwith
+
         let fullPath = Path.Combine(manifest.ExtractedFolder, resource.Files.[0])
         if not(File.Exists fullPath) then
-            failfor resource (sprintf "Cannot find file '%s'." fullPath)
+            sprintf "Cannot find file '%s'." fullPath
+            |> CanvasResource.createFailMessage resource
+            |> failwith
 
         { CanvasFileResource.Identifier = resource.Identifier
           FullPath = fullPath }

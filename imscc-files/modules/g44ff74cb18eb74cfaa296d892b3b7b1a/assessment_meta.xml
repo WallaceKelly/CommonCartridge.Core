@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz identifier="g44ff74cb18eb74cfaa296d892b3b7b1a" xmlns="http://canvas.instructure.com/xsd/cccv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://canvas.instructure.com/xsd/cccv1p0 https://canvas.instructure.com/xsd/cccv1p0.xsd">
   <title>Quiz 2</title>
-  <description></description>
+  <description>&lt;p&gt;This is the content of Quiz 2.&lt;/p&gt;</description>
   <shuffle_answers>false</shuffle_answers>
   <scoring_policy>keep_highest</scoring_policy>
   <hide_results></hide_results>

@@ -6,8 +6,8 @@ open CommonCartridge
 open CommonCartridge.Canvas
 
 [<Theory>]
-[<InlineData(ImsccTestFilePaths.Modules, "Assignment: Assignment 1", "<p>This is the content of Assignment 1.</p>")>]
-[<InlineData(ImsccTestFilePaths.Modules, "Assignment: Assignment 2", "<p>This is the content of Assignment 2.</p>")>]
+[<InlineData(ImsccTestFilePaths.Modules, "Assignment 1", "<p>This is the content of Assignment 1.</p>")>]
+[<InlineData(ImsccTestFilePaths.Modules, "Assignment 2", "<p>This is the content of Assignment 2.</p>")>]
 let ``CanvasAssignmentResource.ofCanvasResource can parse assignment content.``(path: string) (title: string) (content: string) =
 
     // arrange
