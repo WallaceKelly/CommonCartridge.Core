@@ -12,7 +12,7 @@
       <lomimscc:lifeCycle>
         <lomimscc:contribute>
           <lomimscc:date>
-            <lomimscc:dateTime>2020-05-29</lomimscc:dateTime>
+            <lomimscc:dateTime>2020-06-03</lomimscc:dateTime>
           </lomimscc:date>
         </lomimscc:contribute>
       </lomimscc:lifeCycle>
@@ -95,11 +95,11 @@
       <file href="course_settings/media_tracks.xml"/>
       <file href="course_settings/canvas_export.txt"/>
     </resource>
-    <resource identifier="g23ef596f975ac223e44b61a4b046f473" type="webcontent" href="wiki_content/page-2.html">
-      <file href="wiki_content/page-2.html"/>
-    </resource>
     <resource identifier="gc07d3d5fbee6d47b318d8d22f5b8dd17" type="webcontent" href="wiki_content/page-1.html">
       <file href="wiki_content/page-1.html"/>
+    </resource>
+    <resource identifier="g23ef596f975ac223e44b61a4b046f473" type="webcontent" href="wiki_content/page-2.html">
+      <file href="wiki_content/page-2.html"/>
     </resource>
     <resource identifier="g57eb954df8e8581e15a4f6135181042e" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g57eb954df8e8581e15a4f6135181042e/assignment-1.html">
       <file href="g57eb954df8e8581e15a4f6135181042e/assignment-1.html"/>
