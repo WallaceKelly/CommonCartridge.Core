@@ -10,12 +10,14 @@
     <Compile Include="ImsccManifest.fs" />
     <Compile Include="ImsccWebLink.fs" />
     <Compile Include="ImsccQuiz.fs" />
+    <Compile Include="ImsccDiscussion.fs" />
     <Compile Include="CanvasHtmlParsing.fs" />
     <Compile Include="CanvasResources.fs" />
     <Compile Include="CanvasPageResource.fs" />
     <Compile Include="CanvasFileResource.fs" />
     <Compile Include="CanvasAssignmentResource.fs" />
     <Compile Include="CanvasQuizResource.fs" />
+    <Compile Include="CanvasDiscussionResource.fs" />
     <Compile Include="CanvasModuleItem.fs" />
     <Compile Include="CanvasActivity.fs" />
     <Compile Include="CanvasModules.fs" />

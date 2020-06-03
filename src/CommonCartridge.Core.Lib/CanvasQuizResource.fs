@@ -34,7 +34,7 @@ module internal CanvasQuizResource =
 
         let fullPath = Path.Combine(manifest.ExtractedFolder, dependency.Files.[0])
         if not(File.Exists fullPath) then
-            sprintf ": Cannot find file '%s'." fullPath
+            sprintf "Cannot find file '%s'." fullPath
             |> CanvasResource.createFailMessage resource 
             |> failwith
 
