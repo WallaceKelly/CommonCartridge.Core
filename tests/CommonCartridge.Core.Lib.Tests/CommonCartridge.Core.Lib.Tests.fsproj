@@ -43,6 +43,7 @@
     <Compile Include="CanvasFileResourcesTests.fs" />
     <Compile Include="CanvasAssignmentResourcesTests.fs" />
     <Compile Include="CanvasQuizzesResourcesTests.fs" />
+    <Compile Include="CanvasDiscussionResourcesTests.fs" />
     <Compile Include="CanvasActivitiesTests.fs" />
     <Compile Include="CanvasModulesTests.fs" />
     <Compile Include="Program.fs" />
